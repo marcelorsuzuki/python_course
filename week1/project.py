@@ -1,4 +1,4 @@
-# http://www.codeskulptor.org/#user2-urSPV2fmJzphdNG-0.py
+# http://www.codeskulptor.org/#user2-urSPV2fmJzphdNG-1.py
 
 # Rock-paper-scissors-lizard-Spock mini projet
 
@@ -20,55 +20,55 @@ import random
 
 # helper functions
 
-### This function receive a number between 0 and 4, and return a relative string name ###
+### This function receive a target between 0 and 4, and return a relative string name ###
   
-def number_to_name(number):
+def number_to_name(target):
     
     name = "rock"
     
-    if number == 1:
+    if target == 1:
         name = "Spock"
 
-    if number == 2:
+    if target == 2:
         name = "paper"
 
-    if number == 3:
+    if target == 3:
         name = "lizard"
 
-    if number == 4:
+    if target == 4:
         name = "scissors"
         
     return name
         
     
-### This function receive a name and return a relative number between 0 and 4 ###
+### This function receive a name and return a relative target between 0 and 4 ###
     
 def name_to_number(name):
 
-    number = 0
+    target = 0
     
     if name == "Spock":
-        number = 1
+        target = 1
 
     if name == "paper":
-        number = 2
+        target = 2
         
 
     if name == "lizard":
-        number = 3
+        target = 3
         
 
     if name == "scissors":
-        number = 4
+        target = 4
         
-    return number
+    return target
 
 
 ### This function receive a name play with a computer by a random choose, and show the winnter ###
 
 def rpsls(name): 
 
-    # get the number to player and to computer    
+    # get the target to player and to computer    
     player_number = name_to_number(name)
     comp_number = random.randrange(0, 5)
 
